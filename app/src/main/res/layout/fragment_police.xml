@@ -3,17 +3,19 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--Red Layout-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <!--Blue Layout-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <!--station1-->
+            <!--Green Layout-->
             <RelativeLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp">
@@ -24,16 +26,51 @@
                     android:layout_height="match_parent" />
             </RelativeLayout>
 
-            <!--station2-->
+            <!--Green Layout-->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:src="@drawable/station1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
 
         </LinearLayout>
 
+        <!--Blue Layout-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        </RelativeLayout>
+            <!--Green Layout-->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:src="@drawable/station1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <!--Green Layout-->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:src="@drawable/station1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </LinearLayout>
 
 
     </LinearLayout>
 
 
-
-</RelativeLayout>
+        </RelativeLayout>
