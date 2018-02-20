@@ -5,6 +5,8 @@
 
     <!--Red Layout-->
     <LinearLayout
+        android:background="#82ffffff"
+        android:padding="20dp"
         android:layout_centerInParent="true"
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -18,8 +20,9 @@
 
             <!--Green Layout-->
             <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp">
+                android:layout_margin="@dimen/margin"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon">
             <!--station1-->
                 <ImageView
                     android:src="@drawable/station1"
@@ -31,8 +34,9 @@
 
             <!--Green Layout-->
             <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp">
+                android:layout_margin="@dimen/margin"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon">
                 <!--station2-->
                 <ImageView
                     android:src="@drawable/station2"
@@ -53,8 +57,9 @@
 
             <!--Green Layout-->
             <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp">
+                android:layout_margin="@dimen/margin"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon">
                 <!--station3-->
                 <ImageView
                     android:src="@drawable/station3"
@@ -66,8 +71,9 @@
 
             <!--Green Layout-->
             <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp">
+                android:layout_margin="@dimen/margin"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon">
                 <!--station4-->
                 <ImageView
                     android:src="@drawable/station4"
