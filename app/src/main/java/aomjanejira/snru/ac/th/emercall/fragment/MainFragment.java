@@ -1,5 +1,7 @@
 package aomjanejira.snru.ac.th.emercall.fragment;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.net.URI;
 
 import aomjanejira.snru.ac.th.emercall.R;
 
@@ -34,6 +38,7 @@ public class MainFragment extends Fragment{
             public void onClick(View view) {
 
                 Log.d(tag, "You Click Image Station1");
+                callStation("1111");
 
             }
         });
@@ -42,7 +47,9 @@ public class MainFragment extends Fragment{
         station1TextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Log.d(tag,"Click Text " + getString(R.string.station1));
+                callStation("1111");
             }
         });
 
@@ -61,7 +68,12 @@ public class MainFragment extends Fragment{
 
     public void callStation(String numberCall) {
 
-    }
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:" +numberCall));
+        startActivity(intent);
+
+
+    }   // callStation
 
     @Nullable
     @Override
